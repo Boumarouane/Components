@@ -16,13 +16,14 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 `;
 const Line = styled.div`
-  width: 50%;
-  height: 500px;
-  background: red;
-  opacity:50%;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
   position: relative;
   &:before{
       content:'';
@@ -30,15 +31,17 @@ const Line = styled.div`
       top: 0%;
     left: 100%;
       background:black;
-      height: 500px;
+      height: 100vh;
       width:1px;
-      animation: ${animationLine} 4s linear 1;
+      animation: ${animationLine} 2s linear 1;
   }
 `;
 
 const LineTranslate = () => {
   return (
     <Section>
+      <Line></Line>
+      <Line></Line>
       <Line></Line>
     </Section>
   );

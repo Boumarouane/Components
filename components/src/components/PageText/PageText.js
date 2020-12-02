@@ -1,7 +1,9 @@
 import React from "react";
 // import TextAnimation from "../TextComponents/TextAnimation";
 // import TextLine from '../TextComponents/TextLine'
-import LineTranslate from '../Elements/LineTranslate'
+// import LineTranslate from '../Elements/LineTranslate'
+// import TikTok from '../PageText/TikTok'
+import ScrollText from '../PageText/ScrollText'
 
 const PageText = () => {
   return (
@@ -16,7 +18,9 @@ const PageText = () => {
         backgroundTextOne="white"
       /> */}
       {/* <TextLine/> */}
-      <LineTranslate/>
+      {/* <LineTranslate/> */}
+      {/* <TikTok/> */}
+      <ScrollText/>
     </div>
   );
 };
