@@ -23,9 +23,12 @@ const TextStroke = styled.h1`
   font-size: 18em;
   letter-spacing: 2px;
   text-transform: uppercase;
-  /* color:#000; */
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #000;
   -webkit-text-stroke-width: 5px;
+  &:hover  {
+    -webkit-text-fill-color: transparent;
+      transition:  0.2s;
+  }
 `;
 
 const SectionAnimation = styled.section`

@@ -3,7 +3,9 @@ import React from "react";
 // import TextLine from '../TextComponents/TextLine'
 // import LineTranslate from '../Elements/LineTranslate'
 // import TikTok from '../PageText/TikTok'
-import ScrollText from '../PageText/ScrollText'
+// import ScrollText from '../PageText/ScrollText'
+// import TextAnimation from '../TextComponents/TextAnimation'
+import SmokeText from '../TextComponents/SmokeText'
 
 const PageText = () => {
   return (
@@ -20,7 +22,9 @@ const PageText = () => {
       {/* <TextLine/> */}
       {/* <LineTranslate/> */}
       {/* <TikTok/> */}
-      <ScrollText/>
+      {/* <ScrollText/> */}
+      {/* <TextAnimation /> */}
+      <SmokeText/>
     </div>
   );
 };
