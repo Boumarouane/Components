@@ -1,10 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import TitleOne from "../TexteComponents/TitleOne";
+import TitleOne from "../TextComponents/TitleOne";
 import Card from "./Card";
 import ImageRelax from "../image/relax.jpg";
 import ImageSleep from "../image/sleep.jpg";
 import ImageAnalyse from "../image/analyse.jpg";
+import CardImage from "./CardImage";
+import Image from "../image/people.jpeg";
+import ImageTwo from "../image/prop.jpeg";
+import { FaDribbble } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
 
 const Section = styled.section`
   background-color: #F5F5F5;
@@ -63,7 +72,46 @@ const PageCard = () => {
         />
       </Section>
       <Section>
-          
+        <CardImage
+          textLeft="Web Designer"
+          textRight="Sophie Dubois"
+          image={ImageTwo}
+          iconOne={<FaDribbble />}
+          iconTwo={<FaBehance />}
+          posIcon="350px"
+          colorBackCard="#ff5e62"
+          gradientColorLeft="linear-gradient(to bottom, #ff9966 , #ff5e62)"
+          gradientColorRight="linear-gradient(to bottom, #ff5e62, #ff9966)"
+          transformORight="skew(10deg) rotate(12deg) translateX(150%) translateY(-50%)"
+          transformOLeft="skew(10deg) rotate(12deg) translateX(-150%) translateY(-50%)"
+          transformORightHover="skew(10deg) rotate(10deg) translateX(0) translateY(-50%)"
+          transformOLeftHover="skew(10deg) rotate(10deg) translateX(0) translateY(-50%)"
+          posAbsTopLeft="80%"
+          posAbsTopRight="73%"
+          colorHoverIcon="#ff9966"
+          linkIconOne=""
+          linkIconTwo=""        
+        />
+        <CardImage
+          textLeft="Devellopeur Web"
+          textRight="Robe Van Himst"
+          image={Image}
+          iconOne={< FaGithub/>}
+          iconTwo={<FaLinkedinIn />}
+          posIcon="0px"
+          colorBackCard="#c33764"
+          gradientColorLeft="linear-gradient(to bottom, #c33764, #1d2671)"
+          gradientColorRight="linear-gradient(to bottom, #1d2671, #c33764)"
+          transformORight="skew(-10deg) rotate(-12deg) translateX(150%) translateY(-50%)"
+          transformOLeft="skew(-10deg) rotate(-12deg) translateX(-150%) translateY(-50%)"
+          transformORightHover="skew(-10deg) rotate(-10deg) translateX(0) translateY(-50%)"
+          transformOLeftHover="skew(-10deg) rotate(-10deg) translateX(0) translateY(-50%)"
+          posAbsTopLeft="67%"
+          posAbsTopRight="60%"
+          colorHoverIcon="#1d2671"
+          linkIconOne=""
+          linkIconTwo=""        
+        />
       </Section>
     </>
   );

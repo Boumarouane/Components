@@ -5,7 +5,8 @@ import React from "react";
 // import TikTok from '../PageText/TikTok'
 // import ScrollText from '../PageText/ScrollText'
 // import TextAnimation from '../TextComponents/TextAnimation'
-import SmokeText from '../TextComponents/SmokeText'
+// import SmokeText from '../TextComponents/SmokeText'
+// import CircleText from '../TextComponents/CircleText'
 
 const PageText = () => {
   return (
@@ -24,7 +25,12 @@ const PageText = () => {
       {/* <TikTok/> */}
       {/* <ScrollText/> */}
       {/* <TextAnimation /> */}
-      <SmokeText/>
+      {/* <SmokeText/> */}
+      {/* <CircleText
+      txt="dsfffffff"
+      radius="100"
+      classIndex="0"
+      /> */}
     </div>
   );
 };

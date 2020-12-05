@@ -1,6 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* background-color: black; */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* background-color: black; */
 }
+.container {
+    /*centers in the container*/
+    text-align: center;
+  }
+  
+  div.circTxt {
+    /*allows for centering*/
+    display: inline-block;
+    /*adjust as needed*/
+    margin-bottom: 128px;
+    color: whitesmoke;
+  }
