@@ -4,6 +4,8 @@ import IconHexagonal from "./IconHexagonal";
 import IconHoverBack from "./IconHoverBack";
 import IconHoverExtend from "./IconHoverExtend";
 import CheckboxLightUp from "./CheckboxLightUp";
+import SocialMediaHover from './SocialMediaHover'
+import IconPivot from './IconPivot'
 import IconHover from "./IconHover";
 import IconNeu from "./IconNeu";
 import { FaBehance } from "react-icons/fa";
@@ -66,7 +68,14 @@ const PageIcon = () => {
         <IconHoverExtend icon={<FaInstagram />} textIcon="Instagram" colorBackIconHover="#e4405f" />
       </Section>
       <Section>
-        
+      <SocialMediaHover
+      icon={<FaInstagram />}
+      />
+      </Section>
+      <Section>
+        <IconPivot
+        icon={<FaInstagram />}
+        />
       </Section>
     </>
   );
