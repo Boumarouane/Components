@@ -6,6 +6,7 @@ import IconHoverExtend from "./IconHoverExtend";
 import CheckboxLightUp from "./CheckboxLightUp";
 import SocialMediaHover from './SocialMediaHover'
 import IconPivot from './IconPivot'
+import CheckBoxLight from './CheckBoxLight'
 import IconHover from "./IconHover";
 import IconNeu from "./IconNeu";
 import { FaBehance } from "react-icons/fa";
@@ -76,6 +77,9 @@ const PageIcon = () => {
         <IconPivot
         icon={<FaInstagram />}
         />
+      </Section>
+      <Section>
+    <CheckBoxLight/>
       </Section>
     </>
   );
