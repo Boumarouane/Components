@@ -79,8 +79,12 @@ const PageIcon = () => {
         />
       </Section>
       <Section>
-    <CheckBoxLight/>
+        <CheckBoxLight/>
       </Section>
+      <Section>
+        
+      </Section>
+
     </>
   );
 };

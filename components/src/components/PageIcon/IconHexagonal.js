@@ -11,7 +11,7 @@ const PageIcon = ({ icon, iconLink, colorBack }) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 3rem;
     transition: -5s;
     color: #fff;
     &:before {
@@ -22,7 +22,7 @@ const PageIcon = ({ icon, iconLink, colorBack }) => {
       width: 100%;
       height: 100%;
       background: ${colorBack};
-      z-index: -1;
+      z-index: 1;
       transform: rotate(60deg);
     }
     &:after {
@@ -33,7 +33,7 @@ const PageIcon = ({ icon, iconLink, colorBack }) => {
       width: 100%;
       height: 100%;
       background: ${colorBack};
-      z-index: -1;
+      z-index: 1;
       transform: rotate(-60deg);
     }
   `;

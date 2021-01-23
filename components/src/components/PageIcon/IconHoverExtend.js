@@ -1,43 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 
-const PageIcon = ({ icon,textIcon, colorBackIconHover }) => {
+// Lorsqu'on survole le composant ButtonIcon qui est à 60px de base, il s'étend jusque 200px faisant apparaitre le <SpanText/> en jouant avec le display: inline-block. (à mettre dans un container <ul>)
+
+const IconExtend = ({ icon,textIcon, colorBackIconHover }) => {
   const Icon = styled.i`
     display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 6rem;
+    width: 6rem;
     text-align: center;
-    border-radius: 50px;
-    /* box-sizing: border-box; */
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-    font-size:30px;
+    border-radius: 5rem;
+    line-height: 5.5rem;
+    transition: 0.3s ease-in-out;
+    font-size:4rem;
     color:${colorBackIconHover};
   `;
 
-  const Span = styled.span`
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-    transition: all 0.3s ease-out;
+  const SpanText = styled.span`
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 5.5rem;
+      margin-left: 1rem;
   `;
 
-  const Button = styled.li`
-    /* display: inline-block; */
-    height: 60px;
-    width: 60px;
-    /* float: left; */
-    /* margin: 0 5px; */
+  const ButtonIcon = styled.li`
+    height: 6rem;
+    width: 6rem;
     overflow: hidden;
-    /* background: #fff; */
-    border-radius: 50px;
+    border-radius: 5rem;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
-    list-style:none;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    list-style: none;
     &:hover {
-      width: 200px;
+      width: 20rem;
     }
     &:hover ${Icon}{
         color: #fff;
@@ -45,21 +41,23 @@ const PageIcon = ({ icon,textIcon, colorBackIconHover }) => {
     &:nth-child(1):hover ${Icon} {
       background: ${colorBackIconHover};
     }
-    &:nth-child(1) ${Span} {
+    &:nth-child(1) ${SpanText} {
       color: ${colorBackIconHover};
     }
   `;
 
   return (
     <>
-      <Button>
+      <ButtonIcon>
           <Icon>
             {icon}
           </Icon>
-  <Span>{textIcon}</Span>
-      </Button>
+          <SpanText>
+            {textIcon}
+          </SpanText>
+      </ButtonIcon>
     </>
   );
 };
 
-export default PageIcon;
+export default IconExtend;

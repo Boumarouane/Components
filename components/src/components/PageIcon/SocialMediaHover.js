@@ -1,10 +1,10 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const SocialMediaHover = ({ icon }) => {
+const SocialMediaHover = ({ icon, color, colorHover, colorBefore }) => {
   const animate = keyframes`
     0%{
-        left:-110%;
+        left:-90%;
         top:90%;
     }50%{
         left:10%;
@@ -16,32 +16,33 @@ const SocialMediaHover = ({ icon }) => {
     `;
 
   const Icon = styled.div`
-    line-height: 90px;
-    font-size: 26px;
+    line-height: 7.5rem;
+    font-size: 5rem;
     transition: 0.2s linear;
   `;
+
   const Link = styled.li`
     display: inline-block;
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-    border-radius: 30%;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    border-radius: 20%;
     box-shadow: 0 5px 15px -5px #00000070;
-    color: black;
+    color: ${color};
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: pointer;
     &:hover ${Icon} {
-      transform: scale(1.3);
-      color: #fff;
+      transform: scale(1.2);
+      color: ${colorHover};
     }
     &:before {
       content: "";
       position: absolute;
       width: 120%;
       height: 120%;
-      background: blue;
+      background: ${colorBefore};
       transform: rotate(45deg);
       left: -110%;
       top: 90%;
